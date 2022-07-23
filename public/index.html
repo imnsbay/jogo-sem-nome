@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>O jogo sem nome</title>
+  </head>
+  <body>
+    <div class="bg-gray-700 flex w-screen h-screen items-center justify-center">
+      <div id="login-page" class="flex flex-col items-center justify-center gap-x-2 gap-y-6">
+        <div>
+          <input
+            class="px-3 py-2 rounded-lg"
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+          <input
+            class="px-3 py-2 rounded-lg"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <button
+            id="button-login"
+            class="px-3 py-2 bg-white text-gray-400 rounded-md hover:scale-105 duration-100 hover:bg-blue-50"
+          >
+            Entrar
+          </button>
+        </div>
+        <a href="/register" class="text-white"
+          >Não tem uma conta?
+          <span class="font-bold hover:text-blue-400 duration-100">Registre-se agora!</span></a
+        >
+      </div>
+      <div
+        id="lobby-page"
+        class="hidden flex-col h-[600px] w-[800px] bg-gray-500 p-10 rounded-3xl items-center gap-y-4"
+      >
+        <p class="self-start text-white font-bold text-3xl">LOBBY</p>
+        <div
+          id="match-list"
+          class="bg-gray-200 w-full h-52 rounded-lg flex flex-col gap-y-2 p-3 overflow-y-scroll"
+        ></div>
+        <div class="flex flex-col bg-gray-700 w-full h-52 rounded-lg border-2 border-white">
+          <div
+            id="chat-messages"
+            class="flex flex-col w-full h-full gap-y-2 p-3 overflow-y-scroll"
+          ></div>
+          <div class="flex gap-x-2">
+            <input
+              class="w-full px-3 py-2 rounded-tr-lg"
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Write your message here"
+            />
+            <button
+              id="button-message"
+              class="w-max px-3 py-1 bg-white text-gray-400 rounded-tl-lg"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-x-4">
+          <input
+            class="px-3 py-2 rounded-lg"
+            type="text"
+            name="matchName"
+            id="match-name"
+            placeholder="Match name"
+          />
+          <button
+            id="button-createMatch"
+            class="px-3 py-2 bg-white text-gray-400 rounded-md hover:scale-105 duration-100 hover:bg-blue-50"
+          >
+            Criar
+          </button>
+        </div>
+      </div>
+      <div id="game-page" class="hidden flex-col">
+        <div id="player-list" class="flex justify-between px-48 text-white mb-7"></div>
+        <div
+          id="game"
+          class="flex outline-2 outline outline-green-900 w-[1536px] h-[768px] bg-[url('../assets/mapa-blocks.png')] bg-no-repeat rounded-3xl"
+        ></div>
+        <div id="items-wrapper" class="flex absolute w-[1536px] h-[768px] mt-[92px]"></div>
+        <button
+          id="button-startMatch"
+          class="absolute hidden bottom-20 self-center h-max text-white text-3xl font-bold rounded-xl bg-orange-600 hover:bg-orange-500 hover:scale-110 duration-150 px-4 py-2"
+        >
+          Começar partida!
+        </button>
+      </div>
+      <div id="winner-page" class="text-white hidden flex-col items-center justify-center gap-y-8">
+        <span class="text-xl text-">GANHADOR</span>
+        <span id="winner-name" class="text-9xl px-20 py-10 bg-yellow-500 rounded-full">fulano</span>
+        <button
+          id="winner-continuar"
+          class="bg-orange-600 hover:bg-orange-500 hover:scale-110 duration-150 px-4 py-2 rounded-full"
+        >
+          continuar >
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>

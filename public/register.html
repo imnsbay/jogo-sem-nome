@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Register - Jogo v2</title>
+  </head>
+  <body>
+    <div class="bg-gray-700 flex flex-col w-screen h-screen items-center justify-center gap-y-6">
+      <div id="register-page" class="flex items-center justify-center gap-x-2">
+        <input
+          class="px-3 py-2 rounded-lg"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+        <input
+          class="px-3 py-2 rounded-lg"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <input
+          class="px-3 py-2 rounded-lg"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <button
+          id="button-register"
+          class="px-3 py-2 bg-white text-gray-400 rounded-md hover:scale-105 duration-100 hover:bg-blue-50"
+        >
+          Cadastrar
+        </button>
+      </div>
+      <a href="/" class="text-white"
+        >Já tem uma conta?
+        <span class="font-bold hover:text-blue-400 duration-100">Entre agora!</span></a
+      >
+    </div>
+  </body>
+  <script src="./js/register.js"></script>
+</html>
