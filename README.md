@@ -1,6 +1,6 @@
 # jogo-sem-nome
 
-## Como jogar
+## Instruções de build
 
 Clone o repositório: `git clone https://github.com/imnsbay/jogo-sem-nome.git`
 
@@ -9,6 +9,10 @@ Instale as dependências: `yarn`
 Rode o servidor: `yarn start`
 
 Você poderá acessar o jogo em [http://localhost:4040](http://localhost:4040)
+
+## Como jogar
+
+Mova o player utilizando as setas do teclado
 
 ## Configurações do jogo
 
