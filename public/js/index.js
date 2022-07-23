@@ -445,7 +445,7 @@ function createPlayerIconElement(username, coins, playerNumber) {
   coinSpan.style.height = "1.5rem";
   coinSpan.style.backgroundSize = "cover";
   coinSpan.style.backgroundPosition = "center";
-  coinSpan.style.backgroundImage = "url('../assets/coin.png')";
+  coinSpan.style.backgroundImage = "url('../assets/items/coin.png')";
 
   coinDiv.appendChild(coinSpan);
 

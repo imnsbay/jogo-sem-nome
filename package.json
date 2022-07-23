@@ -7,7 +7,7 @@
   "scripts": {
     "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
     "tailwind:watch": "npx tailwindcss -i ./public/styles/tailwind.css -o ./public/styles/style.css --watch",
-    "start": "nodemon index",
+    "start": "nodemon index --ignore users.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
